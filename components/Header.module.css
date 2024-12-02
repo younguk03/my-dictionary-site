@@ -1,0 +1,51 @@
+.main {
+   margin: 0;
+   padding: 0;
+   /* position: fixed; */
+
+}
+
+
+
+.block {
+   border: 1px solid black;
+   background-color: black;
+}
+
+
+.logo {
+   font-size: x-large;
+   color: white;
+   padding: 10px;
+   padding-left: 20px;
+   font-weight: 600;
+   margin-top: 5px;
+}
+
+.search {
+   margin: 15px;
+   border: 1px solid white;
+   padding: 2px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5px;
+}
+.search1 {
+   outline: none;
+   margin: 2px;
+}
+
+.img_logo{
+   margin-right: 2px;
+   top: 50%;
+   bottom: 50%;
+}
+
+.login {
+   display: flex;
+   right: 18px;
+   margin: 15px;
+   padding: 4px;
+   color: white;
+   border: 1px solid white;
+   font-size: small;
+}

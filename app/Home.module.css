@@ -1,0 +1,63 @@
+.main {
+   margin: 0;
+}
+
+.head {
+   position: fixed;
+   width: 100%;
+   top: 0%;
+}
+@media(max-width:1000px){
+   .main {
+      width: 1000px;
+   }
+   .head {
+      width: 1000px;
+
+   }
+}
+
+.top_list {
+   width: 75%;
+   border-right: 1px solid rgb(56, 56, 56);
+   margin-left: 10%;
+}
+
+.list1 {
+   border: 1px black solid;
+   padding: 15px;
+   margin-top: 10px;
+   margin-right: 20px;
+}
+
+.smallTitle {
+   border-bottom: 1px solid black;
+   padding-bottom: 6px;
+}
+
+.kategorie {
+   width: 25%;
+   padding-left: 20px;
+   margin-right: 10%;
+}
+
+.kategorieList {
+   border: 1px solid;
+   padding: 24px;
+   margin: 15px;
+}
+
+.border1 {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+
+.addWriting {
+   display: flex;
+   border: 1px solid;
+   margin: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   justify-content: center;
+
+}
