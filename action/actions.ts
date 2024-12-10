@@ -5,10 +5,10 @@ import { convertDocToObj } from "@/libs/helpers";
 import Dic from "@/models/dic";
 
 //1. create 
-export async function createDic(title: string, description: string) {
+export async function createDic(title: string, description: string, kategorie:string) {
    try {
       await connectMongoDB()
-      const doc = await Dic.create({ title, description })
+      const doc = await Dic.create({ title, description, kategorie })
       revalidatePath('/')
       return { success: true, dic: convertDocToObj(doc) }
    } catch (error) {
@@ -18,12 +18,12 @@ export async function createDic(title: string, description: string) {
 
 
 // 2. Edit 
-export async function updateDic(id: string, title: string, description: string) {
+export async function updateDic(id: string, title: string, description: string, kategorie:string) {
    try {
       await connectMongoDB()
       const doc = await Dic.findByIdAndUpdate(
          id,
-         { title, description },
+         { title, description, kategorie },
          { new: true }
       )
       if (!doc) throw new Error('토픽을 찾을 수 없습니다.')

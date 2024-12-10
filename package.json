@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@types/react-responsive": "^8.0.8",
     "axios": "^1.7.8",
+    "dotenv": "^16.4.6",
+    "lucide-react": "^0.462.0",
     "mogodb": "^0.0.1-security",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.3",
@@ -20,6 +23,7 @@
     "wikipedia-api": "^0.0.3"
   },
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

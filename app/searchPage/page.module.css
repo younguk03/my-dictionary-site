@@ -1,0 +1,19 @@
+.title {
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.searchTitle {
+   border-bottom: 1px solid black;
+   padding-bottom: 10px;
+   padding-left: 10px;
+}
+
+.description {
+   font-size: small;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   color: rgb(92, 92, 92);
+}

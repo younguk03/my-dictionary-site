@@ -1,0 +1,17 @@
+.description {
+   font-size: small;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   color: rgb(92, 92, 92);
+}
+.description:hover {
+   color: black;
+   text-decoration: underline;
+}
+
+.kategorie {
+   font-size: 11px;
+   color: rgb(184, 184, 184);
+}

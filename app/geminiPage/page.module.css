@@ -1,0 +1,83 @@
+.block {
+   border: 1px solid rgb(174, 174, 174);
+   border-radius: 20px;
+}
+.input1 {
+   border-radius: 14px;
+   border: solid 1px rgb(156, 156, 156);
+   height: 39px;
+   margin: 20px;
+   margin-right: 10px;
+   width: 200px;
+   padding: 5px
+}
+.input1:focus-within {
+   border: solid 1px rgb(96, 243, 253);
+   box-shadow: 1px rgb(96, 243, 253);
+}
+
+.submit1{
+   height: 39px;
+   border: 1px solid rgb(156, 156, 156);
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 14px;
+   transition: all 0.3s; /*참고영상:https://www.youtube.com/watch?app=desktop&v=jxslBFkse2w*/
+}
+.submit1:hover {
+   background-color: rgb(234, 234, 234);
+}
+
+
+/* pre 넓이 조정 방법: https://nyang-in.tistory.com/168 */
+.result {
+   margin-left: 30px;
+   margin-top: 15px;
+   width: 80%;
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   margin-bottom: 14px;
+}
+
+.border {
+   border: 1px solid rgb(148, 148, 148);
+   border-radius: 20px;
+   margin-top: 15px;
+   padding: 30px;
+   padding-top: 20px;
+}
+
+.input2 {
+   border: 1px solid rgb(156, 156, 156);
+   height: 35px;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.textarea{
+   border: 1px solid rgb(156, 156, 156);
+   border-radius: 10px;
+   height: 250px;
+   padding: 15px;
+}
+
+.submit2 {
+   border: 1px solid rgb(156, 156, 156);
+   margin-left: 40%;
+   margin-right: 40%;
+   border-radius: 15px;
+   padding: 5px;
+   transition: all 0.5s;
+}
+.submit2:hover {
+   color: white;
+   background-color: black;
+}
+
+.kategorie {
+   border-radius: 10px;
+   border: 1px solid rgb(156, 156, 156);
+   height: 30px;
+   padding: 0px;
+   margin-left: 10px;
+}
