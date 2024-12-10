@@ -23,10 +23,6 @@ function SearchPage() {
 
    return (
       <div>
-         <div>
-            <Header />
-         </div>
-         
          <div className='m-10'>
             <div className={style.searchTitle}>
                <span className='text-1xl'>검색결과: </span>
