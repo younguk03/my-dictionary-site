@@ -16,7 +16,7 @@ export default function EditDicForm({
    title, 
    description, 
    kategorie }: EditDicFormProps) {
-      const [newTitle] = useState(title); //useState는 컴포넌트의 상태를 간편하게 생성하고 업데이트 해주는 도구를 제공해준다.
+      const [newTitle, setNewTitle] = useState(title); //useState는 컴포넌트의 상태를 간편하게 생성하고 업데이트 해주는 도구를 제공해준다.
       const [newDescription, setNewDescription] = useState(description);
       const [newKategorie, setNewKategorie] = useState(kategorie);
       const router = useRouter();
@@ -25,7 +25,7 @@ export default function EditDicForm({
    
          try {
             await updateDic(id, newTitle, newDescription, newKategorie)
-            router.push('/');
+            router.push('/admin');
             router.refresh();
          } catch (error) {
             console.log(error)
@@ -37,7 +37,7 @@ export default function EditDicForm({
       <div className={style.main}>
          <div className={style.edit}>수정하기</div>
          <div className='m-5 mr-10 ml-10'>
-            <form action="/admin" onClick={handleSubmit}>
+            <form action="/admin" onSubmit={handleSubmit}>
                <div>
                   <select
                      name="languages"
@@ -58,7 +58,7 @@ export default function EditDicForm({
                   <input
                      type="text"
                      value={newTitle}
-                     onChange={(e) => setNewDescription(e.target.value)}
+                     onChange={(e) => setNewTitle(e.target.value)}
                      placeholder='제목'
                      className={style.title}
                   />

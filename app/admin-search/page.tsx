@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import React, { Suspense, useEffect, useState } from 'react'
 import { useSearchParams } from 'next/navigation';
 import AdminSearchForm from '@/components/AdminSearchForm';
+import RemoveBtn from '@/components/RemoveBtn';
 
 function AdminSearch() {
    const searchParams = useSearchParams();
@@ -23,40 +24,48 @@ function AdminSearch() {
 
    return (
       <div>
-         <div className='m-10'>
-            <div>
+         <div>
+            <div className={styles.list}>
                {dicData.map((item: any, index: number) => (
-                     <div key={index} className='m-5 mr-10 ml-10'>
-                        <Link href={`/dicPage/${item._id}`}>
-                           <div className={styles.title}>{item.title}</div>
+                  <div key={index} className='m-5 mr-10 ml-10'>
+                     <Link href={`/dicPage/${item._id}`}>
+                        <div className={styles.title}>{item.title}</div>
                         <div className={styles.description}>{item.description}</div>
                      </Link>
+                     <div >
+                        <button>
+                           <RemoveBtn id={item._id} />
+                        </button>
+                        <button className={styles.edit}>
+                           <Link href={`./editDic/${item._id}`}>수정</Link>
+                        </button>
+                     </div>
                   </div>
                ))}
-            </div>         
+            </div>
          </div>
       </div>
-      
+
    );
 }
 
 export default function page() {
    return (
-      <div>
+      <div className={styles.main}>
          <div className={styles.main_text}>
             <Link href={'/admin'}>
                관리자 모드
             </Link>
-            
+
          </div>
          <div className={styles.search}>
-            <AdminSearchForm/>
+            <AdminSearchForm />
          </div>
          <div>
             <Suspense fallback={<div>Loading...</div>}>
-            <AdminSearch/>
+               <AdminSearch />
             </Suspense>
-            
+
          </div>
       </div>
    )

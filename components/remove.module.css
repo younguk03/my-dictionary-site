@@ -1,0 +1,10 @@
+.remove {
+   color: white;
+   background-color: red;
+   border-radius: 5px;
+   padding: 4px;
+   font-size: 14px;
+   margin-left: 10px;
+   padding-left: 7px;
+   padding-right: 7px;
+}

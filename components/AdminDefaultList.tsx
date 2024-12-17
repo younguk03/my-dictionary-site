@@ -29,10 +29,14 @@ export default function AdminDefaultList() {
                         <div className={style.kategorie}>-카테고리: {dic.kategorie}</div>
                      </div>
                   </Link>
+                  <div className='mt-1'>
                   <button>
                      <RemoveBtn id={dic._id} />
                   </button>
+                  <button className={style.edit}>
                   <Link href={`./editDic/${dic._id}`}>수정</Link>
+                  </button>
+                  </div>
                </div>
 
 

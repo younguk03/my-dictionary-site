@@ -1,5 +1,6 @@
 import { deleteDic } from '@/action/actions'
 import React from 'react'
+import style from './remove.module.css'
 
 export default function RemoveBtn({id}: {id:string}) {
    async function handleRemove() {
@@ -13,6 +14,6 @@ export default function RemoveBtn({id}: {id:string}) {
       }
    }
    return (
-      <div className='text-red-500' onClick={handleRemove}>삭제</div>
+      <div className={style.remove} onClick={handleRemove}>삭제</div>
    )
 }

@@ -13,7 +13,7 @@ export default function Page() {
    }
    return (
       <div className={style.main}>
-         <h1 className={style.h1}>관리자 계정</h1>
+         <h1 className={style.h1}>관리자 모드</h1>
          <div className={style.search}>
             <AdminSearchForm/>
          </div>

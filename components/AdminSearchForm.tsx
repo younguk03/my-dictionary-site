@@ -11,7 +11,7 @@ export default function AdminSearchForm() {
       router.push(`/admin-search?search=${encodeURIComponent(inputValue)}`);
    }
    return (
-      <div>
+      <div className={styles.search}>
          <form action="./admin-search" onSubmit={handleSubmit}>
             <input type="search" placeholder='검색어 입력'
                name='search'

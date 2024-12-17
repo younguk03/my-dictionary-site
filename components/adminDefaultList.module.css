@@ -1,6 +1,6 @@
 .form {
-   margin-left: 40px;
-   margin-right: 40px;
+   margin-left: 20%;
+   margin-right: 20%;
 }
 .description {
    font-size: small;
@@ -18,4 +18,14 @@
 .kategorie {
    font-size: 11px;
    color: rgb(184, 184, 184);
+}
+.edit {
+   color: white;
+   background-color: black;
+   border-radius: 5px;
+   padding: 4px;
+   font-size: 14px;
+   margin-left: 10px;
+   padding-left: 7px;
+   padding-right: 7px;
 }
