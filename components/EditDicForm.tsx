@@ -1,7 +1,8 @@
 'use client'
 import { updateDic } from '@/action/actions'
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, {useState } from 'react'
 import style from './editDicForm.module.css'
+import { useRouter } from 'next/navigation'
 
 interface EditDicFormProps {
    id: string,
@@ -10,32 +11,26 @@ interface EditDicFormProps {
    kategorie: string
 }
 
-export default function EditDicForm({ id, title, description, kategorie }: EditDicFormProps) {
-   const [newTitle, setNewTitle] = useState(title)
-   const [newDescription, setNewDescription] = useState(description)
-   const [newKategorie, setNewKategorie] = useState(kategorie)
-   const textRef = useRef<HTMLTextAreaElement>(null);
-
-   //출처: https://velog.io/@hanminss/React-%EC%97%90%EC%84%9C-textarea-%EC%9E%90%EB%8F%99-%EB%86%92%EC%9D%B4-%EC%A1%B0%EC%A0%88%ED%95%98%EA%B8%B0
-   const handleResizeHeight = useCallback(() => {
-      if (textRef.current) {
-         textRef.current.style.height = 'auto';
-         textRef.current.style.height = textRef.current.scrollHeight + "px";
+export default function EditDicForm({ 
+   id, 
+   title, 
+   description, 
+   kategorie }: EditDicFormProps) {
+      const [newTitle] = useState(title); //useState는 컴포넌트의 상태를 간편하게 생성하고 업데이트 해주는 도구를 제공해준다.
+      const [newDescription, setNewDescription] = useState(description);
+      const [newKategorie, setNewKategorie] = useState(kategorie);
+      const router = useRouter();
+      const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+         e.preventDefault()
+   
+         try {
+            await updateDic(id, newTitle, newDescription, newKategorie)
+            router.push('/');
+            router.refresh();
+         } catch (error) {
+            console.log(error)
+         }
       }
-   }, []);
-
-   useEffect(() => {
-      handleResizeHeight();
-   }, [newDescription]); // newDescription이 변경될 때마다 높이 조절
-
-   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault()
-      try {
-         await updateDic(id, newTitle, newDescription, newKategorie)
-      } catch (error) {
-         console.log(error)
-      }
-   }
 
 
    return (
@@ -63,14 +58,13 @@ export default function EditDicForm({ id, title, description, kategorie }: EditD
                   <input
                      type="text"
                      value={newTitle}
-                     onChange={(e) => setNewTitle(e.target.value)}
+                     onChange={(e) => setNewDescription(e.target.value)}
                      placeholder='제목'
                      className={style.title}
                   />
                </div>
                <div>
                   <textarea
-                     ref={textRef}
                      name="description"
                      value={newDescription}
                      onChange={(e) => {

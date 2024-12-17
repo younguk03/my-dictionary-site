@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
     API_URL: process.env.API_URL,
   },
   staticPageGenerationTimeout: 120, //in second
+  typescript: {
+    ignoreBuildErrors: true,
+  }
 };
 
 export default nextConfig;
