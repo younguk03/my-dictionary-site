@@ -1,0 +1,19 @@
+.search1{
+   border: 1px solid black;
+   padding: 5px;
+   border-radius: 15px;
+   outline: none;
+   margin: 2px;
+   width: 350px;
+   height: 40px;
+}
+
+.button {
+   height: 40px;
+   width: 50px;
+   border: 1px solid;
+   padding: 5px;
+   border-radius: 15px;
+   background-color: black;
+   color: white;
+}

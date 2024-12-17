@@ -1,11 +1,21 @@
 .main {
-   margin: 20px;
+   margin: 0px;
+}
+@media(max-width:1000px){
+   .main {
+      width: 1000px;
+   }
+   .head {
+      width: 1000px;
+
+   }
 }
 
 .title{
-   margin-top: 40px;
-   font-size: 35px;
+   margin-top: 90px;
+   font-size: 55px;
    text-align: center;
+   margin-bottom: 40px;
 }
 .kategorie{
    display: flex;
@@ -14,6 +24,7 @@
    padding: 6px;
    border-radius: 10px;
    font-size: 12px;
+   margin-bottom: 30px;
 }
 .update{
    text-align: right;
@@ -22,7 +33,9 @@
    color: rgb(36, 36, 36);
 }
 .description{
-   width: 100%;
+   justify-content: center;
+   margin-left: 10px;
+   margin-right: 10px;
    white-space: pre-wrap;
    word-wrap: break-word;
 }

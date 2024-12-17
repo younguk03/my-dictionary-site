@@ -1,0 +1,48 @@
+.main{
+   margin: 0;
+}
+@media(max-width:1000px){
+   .main {
+      width: 1000px;
+   }
+   .head {
+      width: 1000px;
+
+   }
+}
+
+.kategorieName {
+   font-size: 2rem;
+   font-weight: bold;
+   padding-bottom: 5px;
+   padding-left: 17px;
+   border-bottom: 1px solid rgb(186, 186, 186);
+}
+
+.title {
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.searchTitle {
+   border-bottom: 1px solid black;
+   padding-bottom: 10px;
+   padding-left: 10px;
+}
+
+.description {
+   font-size: small;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   color: rgb(92, 92, 92);
+}
+.kategorie {
+   font-size: 11px;
+   color: rgb(184, 184, 184);
+}
+.description:hover {
+   color: black;
+   text-decoration: underline;
+}

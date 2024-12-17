@@ -25,8 +25,7 @@ export default async function Home() {
           <div className={styles.list1}>
             <div className={styles.smallTitle}>
 
-              <span>최신 업데이트 글</span>
-              <span className='p-4'>조회수 순위</span>
+              <span className='text-xl pl-4 pb-2 text-gray-500'>최신 업데이트 사전</span>
             </div>
             <div className='m-5'>
               <Suspense fallback={<div>로딩중</div>}>
@@ -44,7 +43,7 @@ export default async function Home() {
               <li><Link href='/sportsPage'>스포츠</Link></li>
               <li><Link href='/creaturePage'>생물</Link></li>
               <li><Link href='/historyPage'>역사</Link></li>
-              <li><Link href='/articlePage'>다양한 물건</Link></li>
+              <li><Link href='/articlePage'>물품</Link></li>
             </ul>
           </div>
 
@@ -52,7 +51,7 @@ export default async function Home() {
             <div className={styles.addWriting}>
               <Link href='./geminiPage'>
                 <Image src={document} alt='document' width={30} className='float-left' />
-                <p className='mt-1 float-right'>새문서 작성</p>
+                <p className='mt-1 float-right hover:underline hover:text-black'>새문서 작성</p>
               </Link>
 
             </div>

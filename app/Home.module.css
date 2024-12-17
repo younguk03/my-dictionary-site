@@ -20,7 +20,7 @@
 
 .top_list {
    width: 75%;
-   border-right: 1px solid rgb(133, 133, 133);
+   border-right: 1px solid rgb(171, 171, 171);
    margin-left: 5%;
 }
 
@@ -40,19 +40,27 @@
    width: 25%;
    padding-left: 20px;
    margin-right: 5%;
+   color: rgb(84, 84, 84);
 }
 
 .kategorieList {
-   border: 1px solid rgb(83, 83, 83);
+   border: 1px solid rgb(159, 159, 159);
    border-radius: 3px;
    padding: 24px;
    margin: 15px;
+   color: rgb(74, 74, 74);
+}
+.kategorieList li:hover{
+   color: rgb(0, 0, 0);
+   text-decoration: underline;
 }
 
 .border1 {
-   border-top: 1px solid black;
-   border-bottom: 1px solid black;
+   border-top: 1px solid rgb(134, 134, 134);
+   border-bottom: 1px solid rgb(153, 153, 153);
+   color: rgb(104, 104, 104);
 }
+
 
 .addWriting {
    display: flex;

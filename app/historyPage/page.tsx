@@ -1,7 +1,21 @@
-import React from 'react'
+'use client'
 
-export default function page() {
+import Header from "@/components/Header"
+import style from './page.module.css'
+import HistoryList from "@/components/HistoryList"
+import { Suspense } from "react"
+
+export default function Page() {
    return (
-      <div>page</div>
+      <div className={style.main}>
+         <div>
+            <Header />
+         </div>
+         <div>
+            <Suspense fallback={<div>Loading...</div>}>
+               <HistoryList />
+            </Suspense>
+         </div>
+      </div>
    )
 }

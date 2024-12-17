@@ -1,0 +1,58 @@
+.main {
+   margin: 0;
+}
+@media (max-width: 1000px) {
+   .main {
+      width: 1000px;
+   }
+}
+.edit {
+   border-bottom: 1px solid rgb(156, 156, 156);
+   padding: 5px;
+   font-size: 28px;   
+   text-align: center;
+}
+.one {
+   border-bottom: 1px solid rgb(156, 156, 156);
+   padding-bottom: 1px;
+}
+.title {
+   height: 50px;
+   width: 100%;
+   padding: 0px;
+   margin-left: 10px;
+   outline: none;
+   font-size: 20px;
+   padding-left: 5px;
+}
+
+.kategorie {
+   border: 1px solid rgb(193, 193, 193);
+   height: 30px;
+   padding: 2px;
+   padding-left: 7px;
+   padding-right: 7px;
+   margin-left: 10px;
+   color: rgb(156, 156, 156);
+   font-size: 12px;
+   transition: 0.3s;
+   margin-bottom: 10px;
+}
+.description {
+   margin-top: 10px;
+   outline: none;
+   width: 100%;
+   resize: none;
+   border-bottom: 1px solid rgb(156, 156, 156);
+   resize: none;
+   overflow-y: hidden;
+   margin: 10px;
+}
+.submit {
+   border: 1px solid black;
+   width: 200px;
+   height: 30px;
+   color: white;
+   background-color: black;
+   border-radius: 15px;
+}

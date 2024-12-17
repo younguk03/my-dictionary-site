@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left:0px;
+  top:0px;
+  background-color: #f0f0f0;
+  padding-top: 150px;
+  justify-content: center;
+  text-align: center;
+}
+
+.signIn {
+  /* margin-top: 100px; */
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 10px;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  padding: 40px;
+  width: 400px;
+  display:inline-block;
+}

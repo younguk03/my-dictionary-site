@@ -1,0 +1,12 @@
+.main{
+   margin: 0;
+}
+@media(max-width:1000px){
+   .main {
+      width: 1000px;
+   }
+   .head {
+      width: 1000px;
+
+   }
+}

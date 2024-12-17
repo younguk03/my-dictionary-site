@@ -47,7 +47,7 @@ function SearchPage() {
 
 export default function search() {
    return (
-      <div>
+      <div className={style.main}>
          <div>
             <Header/>
          </div>

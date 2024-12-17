@@ -7,11 +7,11 @@ export default async function page({ params }: { params: Promise<{ id: string }>
    const { id } = await params;
    const { dic } = await getDic(id);
    return (
-      <div>
+      <div className={style.main}>
          <div>
             <Header />
          </div>
-         <div className={style.main}>
+         <div className='ml-10 mr-10'>
             <div className={style.title}>{dic.title}</div>
             <div className={style.kategorie}>
                카테고리:{dic.kategorie}
