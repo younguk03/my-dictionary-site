@@ -5,9 +5,11 @@ import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react'
 import { toast } from 'react-hot-toast';
 import styles from './page.module.css';
+import { useRouter } from 'next/navigation';
 
 export default function Page() {
    const form = useRef<HTMLFormElement>(null);
+   const router = useRouter()
    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       if (!form.current) return;
@@ -19,7 +21,9 @@ export default function Page() {
          'bG-Ot9FgxMzBONXSL'
       ).then(
          (result) => {
+            confirm("전송되었습니다!")
             console.log(result.text);
+            router.back()
             // e.target.reset();
             toast.success("성공적으로 전송되었습니다!", {
                style: {
@@ -28,6 +32,7 @@ export default function Page() {
                   fontSize: "20px",
                },
             });
+
          }
       ).catch((error) => {
          console.error(error);
@@ -69,6 +74,7 @@ export default function Page() {
                      placeholder='문의내용'
                      className={styles.textarea} />
                </div>
+               <p className='text-red-500 text-sm mt-1'>*수정할 단어 이름은 꼭 넣어주세요!</p>
                <button type='submit' className={styles.submit_button}>전송</button>
             </form>
          </div>
