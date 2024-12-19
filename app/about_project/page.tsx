@@ -86,8 +86,8 @@ export default function page() {
                   <div className='ml-8'>
                      <div className=''>
                         <h2 className='font-bold' > 김영욱(92212788) </h2>
-                        < p className='pl-4' >● 깃허브: <Link href={`https://github.com/younguk03/nextjstest1.git`} className='hover:underline hover:text-blue-600'>https://github.com/younguk03/nextjstest1.git</Link></p>
-                        < p className='pl-4' >● vercel: <Link href={`https://nextjs-test1-ashy.vercel.app/`} className='hover:underline hover:text-blue-600'>https://nextjs-test1-ashy.vercel.app/</Link></p>
+                        < p className='pl-4' >● 깃허브: <Link href={`https://github.com/younguk03/project1`} className='hover:underline hover:text-blue-600'>https://github.com/younguk03/project1</Link></p>
+                        < p className='pl-4' >● vercel: <Link href={`https://project1-one-nu.vercel.app/`} className='hover:underline hover:text-blue-600'>https://project1-one-nu.vercel.app/</Link></p>
                      </div>
                      < div className='' >
                         <h2 className='font-bold' > 박이슬(92450524) </h2>
@@ -96,7 +96,7 @@ export default function page() {
                      </div>
                      < div className='pt-2' >
                         <h2 className='font-bold' >김용섭 </h2>
-                        < p className='pl-4' >● 깃허브: <Link href={`https://github.com/yongseop712/kim-yong-seop.git`} className='hover:underline hover:text-blue-600'>https://github.com/yongseop712/kim-yong-seop.git</Link></p>
+                        < p className='pl-4' >● 깃허브: <Link href={`https://github.com/yongseop712/yongseop712`} className='hover:underline hover:text-blue-600'>https://github.com/yongseop712/yongseop712</Link></p>
                         < p className='pl-4' >● vercel: <Link href={`https://kim-yong-seop.vercel.app/`} className='hover:underline hover:text-blue-600'>https://kim-yong-seop.vercel.app/</Link></p>
                      </div>
                   </div>
