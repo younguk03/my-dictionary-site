@@ -95,7 +95,7 @@ export default function page() {
                         < p className='pl-4' >● vercel:<Link href={'https://project-seven-tan-59.vercel.app/'} className='hover:underline hover:text-blue-600'>https://project-seven-tan-59.vercel.app/</Link></p>
                      </div>
                      < div className='pt-2' >
-                        <h2 className='font-bold' >김용섭 </h2>
+                        <h2 className='font-bold' >김용섭(91906734) </h2>
                         < p className='pl-4' >● 깃허브: <Link href={`https://github.com/yongseop712/yongseop712`} className='hover:underline hover:text-blue-600'>https://github.com/yongseop712/yongseop712</Link></p>
                         < p className='pl-4' >● vercel: <Link href={`https://kim-yong-seop.vercel.app/`} className='hover:underline hover:text-blue-600'>https://kim-yong-seop.vercel.app/</Link></p>
                      </div>
